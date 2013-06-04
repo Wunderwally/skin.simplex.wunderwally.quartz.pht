@@ -542,7 +542,7 @@
 			
 		</control>
 		<!-- ### LIST VIEW ITSELF ### -->
-		<control type="list" id="50">
+		<control type="fixedlist" id="50">
 			<posx>640</posx>
 			<posy>50</posy>
 			<width>550</width>
@@ -552,7 +552,9 @@
 			<onleft>PageUp</onleft>
 			<onright>PageDown</onright>
 			<scrolltime>200</scrolltime>
-			<preloaditems>2</preloaditems>
+			<focusposition>5</focusposition>
+			 <movement>5</movement>
+			<preloaditems>5</preloaditems>
 			<itemlayout height="52" condition="![!IsEmpty(Container.Property(mixedParents)) + Container.Content(episodes)] + ![!IsEmpty(Container.Property(mixedParents)) + Container.Content(songs)]">
 				<control type="group">
 					<posy>0</posy>
